@@ -9,7 +9,7 @@ import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 public class Pdf extends CordovaPlugin{
 
     @Override
-    public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
+    public String execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("convert")) {
             try {     
@@ -22,7 +22,7 @@ public class Pdf extends CordovaPlugin{
 			    callbackContext.success(str);
 			    return true;
 			} catch (Exception e) {
-			   return e;
+			   callbackContext.error(e);
 			}
 
         }else{
