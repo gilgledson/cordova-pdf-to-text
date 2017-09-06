@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="convert.pdf.to.text"
+        id="cordova-pdf-to-text"
         version="0.0.1">
 
   <name>Convert pdf to text</name>
@@ -19,10 +19,10 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Pdf">
-        <param name="android-package" value="convert.pdf.to.text.Pdf"/>
+        <param name="android-package" value="cordova.pdf.to.text.Pdf"/>
       </feature>
     </config-file>
-    <source-file src="src/android/pdf.java" target-dir="src/convert/pdf/to/text/"/>
+    <source-file src="src/android/pdf.java" target-dir="src/cordova/pdf/to/text/"/>
   </platform>
 
 </plugin>
