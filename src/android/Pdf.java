@@ -31,7 +31,7 @@ public class Pdf extends CordovaPlugin{
                   //Retrieving text from PDF document
                   String text = pdfStripper.getText(document);
                   // System.out.println(text);
-                  callbackContext.success(text)
+                  callbackContext.success(text);
                   //Closing the document
                   document.close();
 
