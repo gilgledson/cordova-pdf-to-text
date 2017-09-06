@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="convert.pdf.to.text"
+        version="0.0.1">
+
+  <name>Convert pdf to text</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/pdf.js" target="js/pdf.js"/>
+
+  <js-module src="www/pdf.js" name="pdf">
+    <clobbers target="pdf" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Pdf">
+        <param name="android-package" value="convert.pdf.to.text.Pdf"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/pdf.java" target-dir="src/convert/pdf/to/text/"/>
+  </platform>
+
+</plugin>
