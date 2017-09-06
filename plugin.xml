@@ -19,6 +19,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Pdf">
+        <lib-file src="src/android/lib/pdfbox-app-2.0.7.jar"/>
         <param name="android-package" value="cordova.pdf.to.text.Pdf"/>
       </feature>
     </config-file>
