@@ -9,7 +9,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 public class Pdf extends CordovaPlugin{
 
     @Override
-    public String execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
+    public String execute(String action, JSONArray data, CallbackContext callbackContext) {
 
         if (action.equals("convert")) {
             try {     
