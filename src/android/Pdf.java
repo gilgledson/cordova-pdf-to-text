@@ -13,7 +13,7 @@ import org.json.JSONObject;
 public class Pdf extends CordovaPlugin{
 
     @Override
-    public String execute(String action, JSONArray data, CallbackContext callbackContext) {
+    public boolean execute(String action, JSONArray data, CallbackContext callbackContext) {
 
         if (action.equals("convert")) {
             try {    
@@ -29,6 +29,7 @@ public class Pdf extends CordovaPlugin{
                   callbackContext.success(text);
                   //Closing the document
                   document.close();
+                  return true;
 
       } catch (Exception e) {
          callbackContext.error(e);

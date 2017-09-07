@@ -23,7 +23,7 @@
       </feature>
     </config-file>
    <source-file src="src/android/lib/pdfbox-app-2.0.7.jar" target-dir="src/cordova/pdf/to/text/lib/" framework="true" />
-   <source-file src="src/android/pdf.java" target-dir="src/cordova/pdf/to/text/"/>
+   <source-file src="src/android/Pdf.java" target-dir="src/cordova/pdf/to/text/"/>
   </platform>
 
 </plugin>
